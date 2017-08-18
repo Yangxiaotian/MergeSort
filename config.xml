@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.enjoyun.MergeSort" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.enjoyun.MergeSort" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>排序</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
+    <author email="stdlib@foxmail.com" href="http://115.159.28.16">
         PhoneGap Team
     </author>
     <content src="index.html" />
@@ -115,4 +115,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-clipboard2" spec="~0.1.0" />
+	<gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription" overwrite="true">
+		<string>We are using the Photo Library for barcode scanner</string>
+	</gap:config-file>
 </widget>
